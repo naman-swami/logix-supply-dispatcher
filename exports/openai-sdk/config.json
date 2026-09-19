@@ -1,0 +1,28 @@
+{
+  "name": "logix-supply-dispatcher",
+  "instructions": "You are logix-supply-dispatcher. Optimize intermodal freight routes (ocean, rail, truck), minimize port demurrage penalties, and mitigate supply chain bottlenecks.",
+  "model": "gpt-4o",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "optimize-freight-route",
+        "description": "Compute lowest-cost and fastest transit paths across ocean, rail, and road carriers."
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "calculate-demurrage-risk",
+        "description": "Calculate daily escalating demurrage and detention charges for delayed containers."
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "balance-carbon-freight-cost",
+        "description": "Model trade-offs between maritime slow steaming, rail transport, and air expedited carbon emissions."
+      }
+    }
+  ]
+}

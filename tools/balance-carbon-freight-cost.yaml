@@ -1,0 +1,33 @@
+annotations:
+  cost: none
+  read_only: true
+  requires_confirmation: false
+description: Model trade-offs between maritime slow steaming, rail transport, and
+  air expedited carbon emissions.
+input_schema:
+  additionalProperties: false
+  properties:
+    budget_usd:
+      type: number
+    distance_km:
+      type: number
+    freight_mode:
+      type: string
+  required:
+  - freight_mode
+  - distance_km
+  type: object
+name: balance-carbon-freight-cost
+output_schema:
+  additionalProperties: false
+  properties:
+    confidence:
+      type: number
+    data:
+      type: string
+    status:
+      type: string
+  required:
+  - status
+  - data
+  type: object

@@ -1,0 +1,6 @@
+spec_version: "0.1.0"
+name: logix-supply-dispatcher
+version: "0.1.0"
+description: "Autonomous multimodal freight dispatching, route optimization, and logistics bottleneck agent resolving freight delays and demurrage penalties."
+model:
+  preferred: llama-3.3-70b-versatile

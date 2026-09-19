@@ -1,0 +1,35 @@
+annotations:
+  cost: none
+  read_only: true
+  requires_confirmation: false
+description: Compute lowest-cost and fastest transit paths across ocean, rail, and
+  road carriers.
+input_schema:
+  additionalProperties: false
+  properties:
+    cargo_weight_tons:
+      type: number
+    destination_hub:
+      type: string
+    origin_port:
+      type: string
+    priority:
+      type: string
+  required:
+  - origin_port
+  - destination_hub
+  type: object
+name: optimize-freight-route
+output_schema:
+  additionalProperties: false
+  properties:
+    confidence:
+      type: number
+    data:
+      type: string
+    status:
+      type: string
+  required:
+  - status
+  - data
+  type: object
