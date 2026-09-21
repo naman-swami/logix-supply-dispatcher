@@ -55,7 +55,7 @@ logix-supply-dispatcher/
 │   └── fleet_logistics_heuristics.md # Operations research reference
 ├── tests/
 │   └── test_agent.py                # Dispatch test suite
-├── main.py                          # Logistics CLI
+├── fleet_dispatch.py                          # Logistics CLI
 └── requirements.txt
 ```
 
@@ -66,5 +66,5 @@ logix-supply-dispatcher/
 pytest tests/ -v
 
 # Optimize sample delivery manifest
-python main.py --demo
+python fleet_dispatch.py --demo
 ```
