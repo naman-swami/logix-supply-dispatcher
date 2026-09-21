@@ -1,0 +1,31 @@
+{
+  "depot": {
+    "name": "Central Hub",
+    "x": 0.0,
+    "y": 0.0
+  },
+  "vehicle_capacity_kg": 2000.0,
+  "stops": [
+    {
+      "stop_id": "STOP-1",
+      "name": "Westside Retail",
+      "x": 10.0,
+      "y": 15.0,
+      "demand_kg": 450.0
+    },
+    {
+      "stop_id": "STOP-2",
+      "name": "Airport Plaza",
+      "x": 25.0,
+      "y": 5.0,
+      "demand_kg": 700.0
+    },
+    {
+      "stop_id": "STOP-3",
+      "name": "Downtown Express",
+      "x": 5.0,
+      "y": 30.0,
+      "demand_kg": 600.0
+    }
+  ]
+}
